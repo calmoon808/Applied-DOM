@@ -237,10 +237,7 @@
    * that is the result of invoking the Function prototype method, bind
    * on the setMyLightGreen function
    */
-  let btn14Func = setMyLightGreen.bind(btn14);
-  btn14.addEventListener('click', function(){
-    btn14Func();
-  })
+  btn14.addEventListener('click', setMyLightGreen.bind(btn14))
 
   /*
    * Add a click event listener to btn15
